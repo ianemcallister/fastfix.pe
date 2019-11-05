@@ -459,6 +459,9 @@ footer ul {
 }
 
 /* FIX NOW */
+.p-nf{
+	font-size: 12px;
+}
 .fixFullCont {
 	position: relative;
 }
@@ -533,9 +536,11 @@ footer ul {
     opacity: 0;
 }
 .fixCol {
-    display: inline-block;
-    width: 25%;
-    margin: 0 2%;
+	display: inline-block;
+	width: 44%;
+    margin: 0px 10px 3%;
+    /* width: 25%;
+    margin: 0 2%; */
     padding: 40px 25px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -771,6 +776,10 @@ select.form-control {
     float: right;
     width: calc(100% - 140px);
 }
+.infoPedido-fn {
+    float: right;
+	width: calc(100% - 94px);
+}	
 .infoPedido h4 {
 	font-size: 14px;
 	color: #4a4a4a;
@@ -883,6 +892,26 @@ select.form-control {
 .modal-body .colColor span.rose {
 	background-color: #e9cec8;
 }
+
+/*CARROCEL DE CELULARES*/
+.car-nf{
+	top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+    width: 75%;
+    color: #fff;
+    text-align: left;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+/* FIN DE CARROCEL DE CULULARES */
 
 @media (max-width: 1199px) {
 	.lineCont::after {
