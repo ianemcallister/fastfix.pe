@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -9,15 +6,47 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://www.fontify.me/wf/673b8fe0d791bfec7e056e8cdff6c3a0" rel="stylesheet" type="text/css">
 	<title>Fastfix</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/pignose.calendar.css">
 </head>
+<style>
+	body {
+		font-family: font112192;
+	}
+
+	.color-nw {
+		color: #4A4F64
+	}
+
+	.color-nf-p {
+		color: #686F8C !important;
+	}
+
+	.p-nf-color {
+		display: inline;
+	}
+
+	.p-nf-cel {
+		color: #686F8C !important;
+		font-size: 14px;
+		margin-top: 9px !important;
+	}
+
+	.p-fn-sub {
+		font-size: 16px;
+		line-height: 19px;
+		color: #4A4F64;
+		font-weight: bold;
+	}
+</style>
 
 <body>
 	<nav class="navbar navbar-expand-lg navInt">
 		<div class="container">
-			<a class="navbar-brand" href="./index.html"><img src="img/logo-n.png" alt=""></a>
+			<a class="navbar-brand ml-1" href="./index.html"><img src="img/logo-n.png" alt=""></a>
 			<a class="nav-link btnSite d-lg-none ml-auto" href="#">Fix Now</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
 				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,93 +74,107 @@
 		</div>
 	</nav>
 
-	<div class="container">
+	<div class="container" style="height: 40px;">
 		<div class="row">
 			<nav aria-label="breadcrumb ">
 				<ol class="breadcrumb bg-white" style="font-size:12px;">
 					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Library</li>
+					<li class="breadcrumb-item active" aria-current="page">Fix Now</li>
 				</ol>
 			</nav>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row">
+			<nav aria-label="breadcrumb ">
+				<ol class="breadcrumb bg-white" style="font-size:12px;">
+					<li class="breadcrumb-item "><a href="fix-now.html"> <i class="fas fa-chevron-left h4 align-middle"></i> <span class="align-text-bottom ml-1" >Volver al diagnótico</span></a></li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+	
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 ml-auto">
-					<h3> Diagnóstico del teléfono</h3>
-					<p>Sigue esto pasos para realizar el diagnóstico del teléfono</p>
-																	<div class="col-9">
-																		<div class="form-group matLabel active">
-																			<label>Nombre completo</label>
-																			<input type="text" class="form-control">
-																		</div>
-																		<div class="form-group matLabel">
-																			<label>Correo Electrónico</label>
-																			<input type="text" class="form-control">
-																		</div>
-																		<div class="form-group matLabel">
-																			<label>Teléfono</label>
-																			<input type="text" class="form-control">
-																		</div>
-																
-																			<h4> Diagnóstico del teléfono</h4>
-																			<p>Sigue esto pasos para realizar el diagnóstico del teléfono</p>
-																			<div class="form-row">
-																				<div class="form-group col-md-6 matLabel">
-																					<label for="inputEmail4">Fecha <i class="fas fa-calendar-alt" style="margin-left: 90px; font-size: 20px;"></i></label>
-																					<input type="email" class="form-control" id="inputEmail4" placeholder="">
-																				</div>
-																				
-																				<div class="form-group col-md-6  matLabel">
-																					<label for="inputEmail4">Hora <i class="fas fa-clock" style="margin-left: 90px; font-size: 20px;"></i></label>
-																					<input type="email" class="form-control" id="inputEmail4" placeholder="">
-																					
-																				</div>
-																			</div>
-																			<div class="form-group matLabel">
-																				<label>Dirección</label>
-																				<input type="text" class="form-control">
-																			</div>
-																			<img class="mt-1 mb-3" src="/img/map.png"  width="400" alt="">
-																			
-																			<div class="form-group matLabel">
-																				<label>Comentarios (opcional)</label>
-																				<textarea class="form-control" rows="3"></textarea>
-																			</div>
+				<h3 class="color-nw">Contacto</h3>
+				<p class="color-nf-p">Deja tus datos para confirmar el pedido.</p>
+				<div class="col-md-9" style="padding-left: 1px;">
+					<div class="form-group matLabel active">
+						<label>Nombre completo</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group matLabel">
+						<label>Correo Electrónico</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group matLabel">
+						<label>Teléfono</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="col-md-12" style="padding-left: 1px;">
+						<h4 class="color-nw"> Diagnóstico del teléfono</h4>
+						<p class="color-nf-p">Sigue esto pasos para realizar el diagnóstico del teléfono</p>
+					</div>
 
+						<div class="form-row">
+							<div class="form-group col-md-6 matLabel">
+								<label for="inputEmail4">Fecha <i class="fas fa-calendar-alt" style="margin-left: 90px; font-size: 20px;"></i></label>
+								<input type="email" class="form-control" id="inputEmail4" placeholder="">
+							</div>
+							
+							<div class="form-group col-md-6  matLabel">
+								<label for="inputEmail4">Hora <i class="fas fa-clock" style="margin-left: 90px; font-size: 20px;"></i></label>
+								<input type="email" class="form-control" id="inputEmail4" placeholder="">
+								
+							</div>
+						</div>
+						<div class="form-group matLabel">
+							<label>Dirección</label>
+							<input type="text" class="form-control">
+						</div>
+						<img class="mt-1 mb-3" src="/img/map.png"  width="400" alt="">
+						
+						<div class="form-group matLabel">
+							<label>Comentarios (opcional)</label>
+							<textarea class="form-control" rows="3"></textarea>
+						</div>
+						<div class="text-center">
+						<a href="#" class="btnSite">Enviar</a>
 
-																			
-																		<a href="#" class="btnSite">Enviar</a>
-																	</div>
-																	<br>
-			
-													
+						</div>															
+				</div>
+					<br>																
 			</div>
 			<div class="col-md-6 ml-auto">
-	<div class="detallePedido">
-		<h5 class="mt-3 ml-5">Detalles del pedido</h5>
-		<div class="productoPedido">
-			<img src="img/iphone-x-.png" alt="">
-			<div class="infoPedido">
-				<h4>Dispositivo</h4>
-				<p>iPhone 6</p>
-				<h4>Fallas</h4>
-				<p>Pantalla rota, botón encendido, auricular</p>
-				<h4>Fecha</h4>
-				<p>12/03/2019</p>
-			</div>
-		</div>
-		<div class="productoResumen" style="border-bottom: 1px solid #c9c9c9;">
-			<p class="textLeft" style="font-size: 14px;">Total aproximado</p>
-			<p class="textRight" style="font-size: 16px;">S/150</p>
-			
-		</div>
-		<div class="productoResumen">
-			<p class="textLeft">Total aproximado</p>
-			<p class="textRight">S/150</p>
-		</div>
-	</div>
+				<div class="detallePedido position-fixed" >
+					<h5 class="mt-3 ml-5 color-nf-p">Detalle del pedido</h5>
+					<div class="productoPedido">
+						<img src="img/iphone-x-.png" alt="">
+						<div class="infoPedido">
+							<h4>Modelo</h4>
+							<p class="color-nf-p">iPhone 6</p>
+							<h4>Color</h4>
+							<p class="color-nf-p">Space grey</p>
+							<h4>Prendido o apagado</h4>
+							<p class="color-nf-p">Prendido</p>
+							<h4>Problemas</h4>
+							<ul class="color-nf-p" style="font-size: 12px;">							
+								<li type="disc"><strong>Pantalla:</strong> Vidrio dañado</li>		
+								<li type="disc"><strong>Sonido:</strong> Auricular, volumen bajo</li>
+							</ul>
+						</div>
+					</div>
+					<div class="productoResumen" style="border-bottom: 1px solid #c9c9c9;">
+						<p class="textLeft color-nf-p" style="font-size: 14px;">Costo reparación</p>
+						<p class="textRight" style="font-size: 16px;">S/150</p>						
+					</div>
+					<div class="productoResumen">
+						<p class="textLeft color-nf-p">Total aproximado</p>
+						<p class="textRight" style="font-size: 20px; color: #0BB0FD;">S/150</p>
+					</div>
+				</div>
 				
 			</div>
 		</div>

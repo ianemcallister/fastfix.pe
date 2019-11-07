@@ -6,20 +6,47 @@
 	<!-- Bootstrap CSS -->
 	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://www.fontify.me/wf/673b8fe0d791bfec7e056e8cdff6c3a0" rel="stylesheet" type="text/css">
 	<title>Fastfix</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/pignose.calendar.css">
 </head>
+<style>
+body{
+font-family: font112192;
+}
+.color-nw{
+	color:#4A4F64
+}
+.color-nf-p{
+	color:#686F8C
+}
+.p-nf-color{
+	display: inline;
+ }
+ .p-nf-cel{
+	color: #686F8C !important;
+    font-size: 14px;
+    margin-top: 9px !important;
+ }
+ .p-fn-sub{
+	     font-size: 16px;
+    line-height: 19px;
+    color: #4A4F64;
+    font-weight: bold;
+ }
+</style>
 <body>
 	<nav class="navbar navbar-expand-lg navInt">
 	    <div class="container">
-	        <a class="navbar-brand" href="./index.html"><img src="img/logo-n.png" alt=""></a>
+	        <a class="navbar-brand ml-1" href="./index.html"><img src="img/logo-n.png" alt=""></a>
 			<a class="nav-link btnSite d-lg-none ml-auto" href="#">Fix Now</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto" style="font-size: font112192;">
 					<li class="nav-item active">
 						<a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
 					</li>
@@ -45,7 +72,7 @@
 				<nav aria-label="breadcrumb ">
 					<ol class="breadcrumb bg-white" style="font-size:12px;">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Library</li>
+						<li class="breadcrumb-item active" aria-current="page">Fix Now</li>
 					</ol>
 				</nav>
 		</div>
@@ -57,61 +84,63 @@
 				
 			</div> -->
 			<div class="col-md-8 ml-auto">
-				<h3> Diagnóstico del teléfono</h3>
-				<p>Sigue esto pasos para realizar el diagnóstico del teléfono</p>
+				<h3 class="color-nw"> Diagnóstico del teléfono</h3>
+				<p class="color-nf-p">Sigue esto pasos para realizar el diagnóstico del teléfono</p>
 					<section class="fixFullCont">
-						<ul class="navfix">
+						<ul class="navfix" id="nav7">
 							<!-- <li><a class="active" href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li>
 							<li><a href="#"></a></li> -->
-							<img src="/img/Phone.png" alt="" style="margin-top: 11rem;margin-left: 8rem;" width="270">
+							<img src="/img/Phone.png" alt="" style="margin-top: 11rem;margin-left: 6.4rem;" width="270">
 						</ul>
-						<div class="accordion" id="accordionExample">
+						<div class="accordion mt-5" id="accordionExample">
 							<div class="fixSec">
-								<div class="container">
+								<div class="container" style="margin-left: -11px;">
 									<div class="fixTitle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
 										aria-controls="collapseOne">
-										<h3><span>1.</span> Elige tu modelo <i class="fas fa-chevron-down"></i></h3>
+										<!-- <h3><span>1.</span> Elige tu modelo <i class="fas fa-chevron-down"></i></h3> -->
+										<h3><span>1.</span> Elige tu modelo </h3>
 										<p>Elige el modelo de tu iPhone</p>
 									</div>
 									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 										<ul class="selectModel">
-											<li><a href="#">SE</a></li>
-											<li><a href="#">5</a></li>
-											<li><a class="active" href="#">6</a></li>
+											<li><a href="#">6</a></li>
 											<li><a href="#">7</a></li>
-											<li><a href="#">8</a></li>
+											<li><a class="active" href="#">8</a></li>
 											<li><a href="#">X</a></li>
+											<li><a href="#">XR</a></li>
+											<li><a href="#">11</a></li>
 										</ul>
 										<div class="row justify-content-md-center fixCols modelCols">
 											<div class="col-6 col-sm-6 col-md-3">
 												<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
 													<img src="img/iphone.png" alt="">
-													<h3>iPhone 6</h3>
+													<p class="p-nf-cel">iPhone 6</p>
 												</a>
 											</div>
 											<div class="col-6 col-sm-6 col-md-3">
 												<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="#exampleModalCenter">
 													<img src="img/iphone.png" alt="">
-													<h3>iPhone 6 Plus</h3>
+													<p class="p-nf-cel">iPhone 6 Plus</p>
 												</a>
 											</div>
 											<div class="col-6 col-sm-6 col-md-3">
 												<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
 													<img src="img/iphone.png" alt="">
-													<h3>iPhone 6S</h3>
+													<p class="p-nf-cel">iPhone 6S Plus</p>
 												</a>
 											</div>
 											<div class="col-6 col-sm-6 col-md-3">
 												<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
 													<img src="img/iphone.png" alt="">
-													<h3>iPhone 6S Plus</h3>
+													<p class="p-nf-cel">iPhone 6S</p>
 												</a>
 											</div>
 										</div>
 										<!-- <a href="#" class="btnSite">Siguiente</a> -->
+									<br><br>
 									</div>
 								</div>
 							</div>
@@ -146,10 +175,10 @@
 								</div>
 							</div> -->
 							<div class="fixSec">
-								<div class="container">
+								<div class="container" style="margin-left: -11px;">
 									<div class="fixTitle collapsed" data-toggle="collapse" data-target="#collapseDos" aria-expanded="false"
 										aria-controls="collapseDos">
-										<h3><span>2.</span> ¿Tu teléfono está prendido o apagado? <i class="fas fa-chevron-down"></i></h3>
+										<h3><span>2.</span> ¿Tu teléfono está prendido o apagado? </h3>
 										<p>¿Por qué es importante detallar esto?</p>
 									</div>
 									<div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#accordionExample">
@@ -185,6 +214,7 @@
 											</a>
 										</div>
 										<!-- <a href="#" class="btnSite">Siguiente</a> -->
+										<br><br>
 									</div>
 								</div>
 							</div>
@@ -237,56 +267,64 @@
 							</div> -->
 
 							<div class="fixSec">
-								<div class="container">
+								<div class="container" style="margin-left: -11px;">
 									<div class="fixTitle collapsed" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false"
 										aria-controls="collapseTres">
-										<h3><span>3.</span> ¿Qué problema tiene tu teléfono? <i class="fas fa-chevron-down"></i></h3>
-										<p>Puedes elegir más de un problema</p>
+										<h3><span>3.</span> ¿Qué problema tiene tu teléfono? </h3>
+										<div class="row">
+											<div class="col-md-5 mb-3">
+												<p>Puedes elegir más de un problema</p>
+											</div>
+											<div class="col-md-7 mb-3">
+												<p style="text-decoration: underline;text-align: right; color: #2D9CDB;">¿Qué tipo de problemas puede presentar mi iPhone?</p>
+											</div>
+										</div>
 									</div>
 									<div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordionExample">
 										<div class="row justify-content-md-center fixCols">
 											<div class="col-12">
-												<h5 class="ml-5"><span>3.1</span> ¿Qué problema tiene tu teléfono? </h5>
+												<p class="p-fn-sub ml-5"><span>3.1</span> ¿Qué problema tiene tu teléfono? </p>
 												<div class="row bg-light">
 													<div class="col-md-4 mb-3">
 														<br>
-														<a href="#collapseExample" class="btn btn-outline-secondary btn-lg btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-														aria-controls="collapseExample">
+														<a href="#collapseExample" class="btn btn-lg btn-block bg-white text-muted" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+														aria-controls="collapseExample" style="border: 2px solid #E5E8F6;">
 															Pantalla
 														</a>
-														<p class="p-nf mt-1">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
+														<p class="p-nf mt-2 ml-1 color-nf-p">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
+													</div>
+													<div class="col-md-4 mb-3 color-nf-p">
+														<br>
+														<a href="#" class="btn btn-lg btn-block bg-white text-muted" style="border: 2px solid #E5E8F6;">
+															Cámara
+														</a>
+														<p class="p-nf mt-2 ml-1 color-nf-p">Problemas en cámara delantera, trasera, Face ID, y demás</p>
 													</div>
 													<div class="col-md-4 mb-3">
 														<br>
-														<a href="#" class="btn btn-outline-secondary btn-lg btn-block">
-															Pantalla
+														<a href="#" class="btn btn-lg btn-block bg-white text-muted" style="border: 2px solid #E5E8F6;">
+															Batería
 														</a>
-														<p class="p-nf mt-1">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
+														<p class="p-nf mt-2 ml-1 color-nf-p">Problemas con la carga, duración, y demás</p>
 													</div>
 													<div class="col-md-4 mb-3">
-														<br>
-														<a href="#" class="btn btn-outline-secondary btn-lg btn-block">
-															Pantalla
+														<a class="btn btn-lg btn-block bg-white text-muted" style="border: 2px solid #E5E8F6;" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+														aria-controls="collapse2">
+															Sonido
 														</a>
-														<p class="p-nf mt-1">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
+														<p class="p-nf mt-2 ml-1 color-nf-p">Problemas con los altavoces y parlantes</p>
 													</div>
 													<div class="col-md-4 mb-3">
-														<a href="#" class="btn btn-outline-secondary btn-lg btn-block">
-															Pantalla
+														<a href="#" class="btn btn-lg btn-block bg-white text-muted" style="border: 2px solid #E5E8F6;">
+															Botones
 														</a>
-														<p class="p-nf mt-1">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
+														<p class="p-nf mt-2 ml-1 color-nf-p">Problemas con el botón de home, volumen o desbloqueo de huella.</p>
 													</div>
 													<div class="col-md-4 mb-3">
-														<a href="#" class="btn btn-outline-secondary btn-lg btn-block">
-															Pantalla
+														<a href="#" class="btn btn-lg btn-block bg-white text-muted" style="border: 2px solid #E5E8F6;">
+															Otros
 														</a>
-														<p class="p-nf mt-1">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
-													</div>
-													<div class="col-md-4 mb-3">
-														<a href="#" class="btn btn-outline-secondary btn-lg btn-block">
-															Pantalla
-														</a>
-														<p class="p-nf mt-1">Vidrio dañado, manchas o líneas en LCD, problemas de tacteo y demás</p>
+														<p class="p-nf mt-2 ml-1 color-nf-p">No sé que tiene mi teléfono</p>
 													</div>
 												</div>
 												<!-- <p>
@@ -301,91 +339,100 @@
 												</p> -->
 												<div class="collapse" id="collapseExample" style="margin-top: 15px;">
 													<div class="">
-														<h5 class="ml-5"><span>3.2</span> ¿Qué problema tiene tu teléfono?</h5>														
+														<h5 class="p-fn-sub ml-5 mb-3"><span>3.2</span> ¿Qué problema tiene tu teléfono?</h5>														
 														<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 															<div class="carousel-inner">
 																<div class="carousel-item active">
 																	<div class="row justify-content-md-center fixCols modelCols">
-																		<div class="col-6 col-sm-6 col-md-3">
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>Vidrio dañado</h3>
+																				<p>El vidrio se encuentra roto.</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>LCD dañado</h3>
+																				<p>Presenta manchas o líneas</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>Tacteo</h3>
+																				<p>La pantalla no tactea</p>
+																			</a>
+																		</div>
+																		<!-- <div class="col-6 col-sm-6 col-md-3">
 																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6</h3>
+																				<img src="img/image.png" alt="">
+																				<h3>Negro total</h3>
 																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6 Plus</h3>
-																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6S</h3>
-																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6S Plus</h3>
-																			</a>
-																		</div>
+																		</div> -->
 																	</div>
 																</div>
 																<div class="carousel-item">
 																	<div class="row justify-content-md-center fixCols modelCols">
-																		<div class="col-6 col-sm-6 col-md-3">
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>Negro total</h3>
+																				<p>La pantalla está completamente negra</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>Vidrio dañado</h3>
+																				<p>El vidrio se encuentra roto.</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>LCD dañado</h3>
+																				<p>Presenta manchas o líneas</p>
+																			</a>
+																		</div>
+																		<!-- <div class="col-6 col-sm-6 col-md-3">
 																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6</h3>
+																				<img src="img/image.png" alt="">
+																				<h3>Negro Total</h3>
 																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6 Plus</h3>
-																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6S</h3>
-																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6S Plus</h3>
-																			</a>
-																		</div>
+																		</div> -->
 																	</div>
 																</div>
 																<div class="carousel-item">
 																	<div class="row justify-content-md-center fixCols modelCols">
-																		<div class="col-6 col-sm-6 col-md-3">
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>Tacteo</h3>
+																				<p>La pantalla no tactea</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>LCD dañado</h3>
+																				<p>Presenta manchas o líneas</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="">
+																				<img src="img/image.png" alt="">
+																				<h3>Tacteo</h3>
+																				<p>La pantalla no tactea</p>																				
+																			</a>
+																		</div>
+																		<!-- <div class="col-6 col-sm-6 col-md-3">
 																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6</h3>
+																				<img src="img/image.png" alt="">
+																				<h3>Negro Total</h3>
 																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6 Plus</h3>
-																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6S</h3>
-																			</a>
-																		</div>
-																		<div class="col-6 col-sm-6 col-md-3">
-																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
-																				<img src="img/iphone.png" alt="">
-																				<h3>iPhone 6S Plus</h3>
-																			</a>
-																		</div>
+																		</div> -->
 																	</div>
 																</div>
 															</div>
@@ -405,6 +452,39 @@
 															
 														</div>
 													</div>
+												</div>
+
+												<div class="collapse" id="collapse2" style="margin-top: 15px;">
+													<h5 class="p-fn-sub ml-5 mb-3"><span>3.3</span> Elige un problema</h5>
+													<div class="row justify-content-md-center fixCols modelCols">
+																		<div class="col-6 col-sm-6 col-md-5">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter2">
+																				<img src="img/image4.png" alt="">
+																				<h3>Auricular</h3>
+																				<p>Volumen bajo o sin sonido</p>
+																			</a>
+																		</div>
+																		<div class="col-6 col-sm-6 col-md-5">
+																			<a href="#" class="fixCol fixModel active" data-toggle="modal" data-target="#exampleModalCenter2">
+																				<img src="img/image3.png" alt="">
+																				<h3>Altavoz</h3>
+																				<p>Volumen bajo o sin sonido</p>
+																			</a>
+																		</div>
+																		<!-- <div class="col-6 col-sm-6 col-md-4">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
+																				<img src="img/image.png" alt="">
+																				<h3>LCD dañado</h3>
+																				<p>Presenta manchas o líneas</p>
+																			</a>
+																		</div> -->
+																		<!-- <div class="col-6 col-sm-6 col-md-3">
+																			<a href="#" class="fixCol fixModel" data-toggle="modal" data-target="#exampleModalCenter">
+																				<img src="img/image.png" alt="">
+																				<h3>Negro Total</h3>
+																			</a>
+																		</div> -->
+														</div>
 												</div>
 
 												<!-- <a href="#" class="fixCol fixFalla active">
@@ -615,9 +695,6 @@
 		</div>
 	</div>
 
-
-
-
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -645,26 +722,67 @@
 	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
-				<div class="modal-body">
+				<div class="modal-body bg-light">
 					<h2>Selecciona el <strong>color</strong> de tu dispositivo</h2>
 					<div class="colColors">
 						<a href="#" class="colColor" data-dismiss="modal">
-							<span class="silver"></span>
-							<p>Silver</p>
+							<!-- <span class="silver"></span> -->
+							<div class="m-3">
+								<img src="/img/Oval-2-13.png" alt="">
+								<p class="p-nf-color">Silver</p>
+							</div>							
 						</a>
 						<a href="#" class="colColor" data-dismiss="modal">
-							<span class="gray"></span>
-							Space Gray
+							<!-- <span class="gray"></span> -->
+							<div class="m-3">
+								<img src="/img/Oval-2-14.png" alt="">
+								<p class="p-nf-color">Space Gray</p>
+							</div>
 						</a>
 						<br>
 						<a href="#" class="colColor" data-dismiss="modal">
-							<span class="gold"></span>
-							Gold
+							<!-- <span class="gold"></span> -->
+							<div class="m-3">
+								<img src="/img/Oval-2-15.png" alt="">
+								<p class="p-nf-color">Gold</p>
+							</div>
 						</a>
 						<a href="#" class="colColor" data-dismiss="modal">
-							<span class="rose"></span>
-							Rose Gold
+							<!-- <span class="rose"></span> -->
+							<div class="m-3">
+								<img src="/img/Oval-2-16.png" alt="">
+								<p class="p-nf-color">Rose Gold</p>
+							</div>
 						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal 2 -->
+	<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body bg-light">
+					<h2>Cuéntanos un poco más sobre el problema con tu <br> <strong>Auricular</strong></h2>
+					<div class="colColors">
+						<a href="#" class="colColor" data-dismiss="modal">
+							<!-- <span class="silver"></span> -->
+							<div class="m-3">
+								<img src="/img/Audio-bajo.png" alt="">
+								<p class="">Suena muy bajo</p>
+							</div>
+						</a>
+						<a href="#" class="colColor" data-dismiss="modal">
+							<!-- <span class="gray"></span> -->
+							<div class="m-3">
+								<img src="/img/Sin-sonido.png" alt="">
+								<p class="">No suena</p>
+							</div>
+						</a>
+						
 					</div>
 				</div>
 			</div>
@@ -681,6 +799,7 @@
 		$('.matLabel').click(function(){
 			$(this).addClass("active");
 		});
+
 	</script>
 </body>
 </html>
