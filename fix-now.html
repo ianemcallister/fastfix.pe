@@ -9,6 +9,7 @@
 	<title>Fastfix</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/pignose.calendar.css">
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navInt">
@@ -51,7 +52,7 @@
 		<div class="accordion" id="accordionExample">
 			<div class="fixSec">
 				<div class="container">
-					<div class="fixTitle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<div class="fixTitle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id='device'>
 						<h3><span>1.</span> ¿Qué tipo de dispositivo? <i class="fas fa-chevron-down"></i></h3>
 						<p>Elige el terminal a reparar</p>
 					</div>
@@ -303,25 +304,32 @@
 								<div class="formFinal">
 									<div class="form-group matLabel active">
 										<label>Nombre completo</label>
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" id='nombre'>
 									</div>
 									<div class="form-group matLabel">
 										<label>Correo Electrónico</label>
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" id='email'>
 									</div>
 									<div class="form-group matLabel">
 										<label>Teléfono</label>
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" id='phone'>
 									</div>
 									<div class="form-group matLabel">
 										<label>Dirección</label>
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" id='direction'>
 									</div>
 									<div class="form-group matLabel">
 										<label>Comentarios (opcional)</label>
-										<textarea class="form-control" rows="3"></textarea>
+										<textarea class="form-control" rows="3" id='comments'></textarea>
 									</div>
-									<a href="#" class="btnSite">Enviar</a>
+
+									<!--ADDED: FORM FOR SUBMISSION-->
+									<form class="fix-it-form">
+										<input type="submit" value="Enviar" class="btnSite"></input>
+									</form>
+									
+									
+									
 								</div>
 							</div>
 						</div>
@@ -391,6 +399,35 @@
 	<script>
 		$('.matLabel').click(function(){
 			$(this).addClass("active");
+		});
+	</script>
+	<!--ADDED: SCRIPT FOR SUBMISSION-->
+	<script>
+		document.getElementsByClassName('fix-it-form')[0].addEventListener('submit',function(){ 
+			//	define values
+			var data = {
+				device: document.getElementById("device").value,
+				model: "",
+				version: "",
+				colour: "",
+				problem: "",
+				category: "",
+				option: "",
+				price: "",
+				nombre: document.getElementById("nombre").value,
+				email: document.getElementById("email").value,
+				phone: document.getElementById("phone").value,
+				direction: document.getElementById("direction").value,
+				comments: document.getElementById("comments").value
+			};
+			
+			//	SEND THE DATA TO DESIGNATED ENDPOINT
+			var endpoint = '/submission'
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "POST", endpoint, false ); // false for synchronous request
+			xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    		xmlHttp.send( JSON.stringify(data) );
+			return false; 
 		});
 	</script>
 </body>
